@@ -30,6 +30,13 @@ namespace ProyectoJSON
             Stream stream = respuesta.GetResponseStream();
             StreamReader streamlector = new StreamReader(stream, System.Text.Encoding.GetEncoding(8));
 
+            string json = streamlector.ReadToEnd();
+
+            streamlector.Close();
+
+            var contenido = JObject.Parse(json);
+           
+
         }
     }
 }
