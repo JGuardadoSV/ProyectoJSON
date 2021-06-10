@@ -35,8 +35,16 @@ namespace ProyectoJSON
             streamlector.Close();
 
             var contenido = JObject.Parse(json);
-           
+            /*
+             {
+               "userId": 1,
+               "id": 1,
+               "title": "delectus aut autem",
+               "completed": false
+             }
 
+             */
+            Console.WriteLine("UserId=" + (string) contenido["userId"]);
         }
     }
 }
