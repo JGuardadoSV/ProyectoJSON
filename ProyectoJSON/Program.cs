@@ -45,6 +45,13 @@ namespace ProyectoJSON
 
              */
             Console.WriteLine("UserId=" + (string) contenido["userId"]);
+            Console.WriteLine("ID=" + (string)contenido["id"]);
+            Console.WriteLine("title=" + (string)contenido["title"]);
+            Console.WriteLine("completed=" + (string)contenido["completed"]);
+
+
+            /* Reto leer los productos de esta url https://fakestoreapi.com/products  */
+
         }
     }
 }
