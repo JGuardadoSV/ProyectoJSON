@@ -28,7 +28,7 @@ namespace ProyectoJSON
             HttpWebResponse respuesta = (HttpWebResponse)peticion.GetResponse();
 
             Stream stream = respuesta.GetResponseStream();
-            StreamReader streamlector = new StreamReader(stream, System.Text.Encoding.GetEncoding(8));
+            StreamReader streamlector = new StreamReader(stream, System.Text.Encoding.GetEncoding("utf-8"));
 
             string json = streamlector.ReadToEnd();
 
